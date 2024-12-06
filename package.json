@@ -1,0 +1,32 @@
+{
+  "name": "deepclone",
+  "version": "1.0.0",
+  "description": "A lightweight JavaScript library for deep cloning objects with support for circular references",
+  "module": "deepclone.js",
+  "type": "module",
+  "main": "deepclone.js",
+  "engines": {
+    "node": "^20.x.x"
+  },
+  "scripts": {
+    "test": "bun test",
+    "build": "bun build ./deepclone.js --outdir ./dist"
+  },
+  "keywords": ["deep-clone", "clone", "deep-copy", "javascript", "utility"],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/deepclone.git"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist",
+    "deepclone.js"
+  ]
+}
