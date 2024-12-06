@@ -1,24 +1,38 @@
 {
-  "name": "deepclone",
+  "name": "tiny-deep-clone",
   "version": "1.0.0",
-  "description": "A lightweight JavaScript library for deep cloning objects with support for circular references",
-  "module": "deepclone.js",
+  "description": "The tiniest, zero-dependency deep cloning utility for JavaScript (< 1KB gzipped)",
+  "module": "tiny-deep-clone.js",
   "type": "module",
-  "main": "deepclone.js",
+  "main": "tiny-deep-clone.js",
   "engines": {
     "node": "^20.x.x"
   },
   "scripts": {
     "test": "bun test",
-    "build": "bun build ./deepclone.js --outdir ./dist"
+    "build": "bun build ./tiny-deep-clone.js --outdir ./dist"
   },
-  "keywords": ["deep-clone", "clone", "deep-copy", "javascript", "utility"],
+  "keywords": [
+    "deep-clone",
+    "clone",
+    "deep-copy",
+    "javascript",
+    "typescript",
+    "utility",
+    "tiny",
+    "minimal",
+    "zero-dependency"
+  ],
   "author": "",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/deepclone.git"
+    "url": "git+https://github.com/Zaid-maker/tiny-deep-clone.git"
   },
+  "bugs": {
+    "url": "https://github.com/Zaid-maker/tiny-deep-clone/issues"
+  },
+  "homepage": "https://github.com/Zaid-maker/tiny-deep-clone#readme",
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -27,6 +41,6 @@
   },
   "files": [
     "dist",
-    "deepclone.js"
+    "tiny-deep-clone.js"
   ]
 }

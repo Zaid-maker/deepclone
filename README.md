@@ -1,21 +1,21 @@
-# 🔄 DeepClone
+# 🔄 tiny-deep-clone
 
-[![npm version](https://img.shields.io/npm/v/deepclone.svg)](https://www.npmjs.com/package/deepclone)
-[![Node.js Version](https://img.shields.io/node/v/deepclone.svg)](https://nodejs.org)
+[![npm version](https://img.shields.io/npm/v/tiny-deep-clone.svg)](https://www.npmjs.com/package/tiny-deep-clone)
+[![Node.js Version](https://img.shields.io/node/v/tiny-deep-clone.svg)](https://nodejs.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://github.com/yourusername/deepclone/workflows/Publish%20to%20NPM/badge.svg)](https://github.com/yourusername/deepclone/actions)
-[![npm downloads](https://img.shields.io/npm/dm/deepclone.svg)](https://www.npmjs.com/package/deepclone)
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/deepclone)](https://bundlephobia.com/package/deepclone)
+[![Build Status](https://github.com/Zaid-maker/tiny-deep-clone/workflows/Publish%20to%20NPM/badge.svg)](https://github.com/Zaid-maker/tiny-deep-clone/actions)
+[![npm downloads](https://img.shields.io/npm/dm/tiny-deep-clone.svg)](https://www.npmjs.com/package/tiny-deep-clone)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/tiny-deep-clone)](https://bundlephobia.com/package/tiny-deep-clone)
 
-🚀 A minimal, zero-dependency deep cloning utility for JavaScript (< 1KB gzipped).
+🚀 The tiniest, zero-dependency deep cloning utility for JavaScript (< 1KB gzipped).
 
-## ✨ Why Choose DeepClone?
+## ✨ Why Choose tiny-deep-clone?
 
-- 🪶 **Truly Minimal**: Less than 35 lines of code
-- 📦 **Zero Dependencies**: No external packages needed
-- 🎯 **Full Featured**: Handles all JavaScript data types
-- ⚡ **Lightweight**: Less than 1KB gzipped
-- 🔒 **Type Safe**: Works with TypeScript out of the box
+- 🪶 **Ultra Minimal**: Just 35 lines of clean code
+- 📦 **Zero Dependencies**: No bloat, no security risks
+- 🎯 **Feature Complete**: Handles all JavaScript data types
+- ⚡ **Tiny Footprint**: Less than 1KB gzipped
+- 🔒 **Type Safe**: First-class TypeScript support
 
 ## 🛠️ Features
 
@@ -36,25 +36,25 @@
 
 ```bash
 # 📦 npm
-npm install deepclone
+npm install tiny-deep-clone
 
 # 🏃 bun
-bun add deepclone
+bun add tiny-deep-clone
 ```
 
 ## 💻 Usage
 
 ```javascript
-import deepClone from 'deepclone';
+import clone from 'tiny-deep-clone';
 
 // Simple objects
 const user = { name: 'John', age: 30 };
-const clonedUser = deepClone(user);
+const clonedUser = clone(user);
 
 // Nested structures with circular refs
 const circular = { name: 'Circular' };
 circular.self = circular;
-const clonedCircular = deepClone(circular); // ✨ Just works!
+const clonedCircular = clone(circular); // ✨ Just works!
 
 // Special objects
 const map = new Map([['key', 'value']]);
@@ -62,7 +62,7 @@ const set = new Set([1, 2, 3]);
 const date = new Date();
 const regex = /test/gi;
 
-const cloned = deepClone({
+const cloned = clone({
   map,    // ✓ Fully supported
   set,    // ✓ Fully supported
   date,   // ✓ Fully supported
@@ -98,4 +98,4 @@ Works in all modern browsers and Node.js environments:
 
 ---
 
-💫 Star us on [GitHub](https://github.com/yourusername/deepclone) if you find this useful!
+💫 Star us on [GitHub](https://github.com/yourusername/tiny-deep-clone) if you find this useful!
